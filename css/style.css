@@ -137,10 +137,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.animals-description {
-  grid-column: 3;
-}
-
 .animals-description section {
   margin-bottom: 3rem;
 }
