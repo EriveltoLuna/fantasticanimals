@@ -28,6 +28,46 @@ body {
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
+.btn {
+  display: none;
+}
+
+.btn.active {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #fb5;
+}
+
+.btn:hover {
+  background-color: #e54;
+}
+
+.btn-a {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #e54;
+}
+
+@media (hover: hover) {
+  .btn-a:hover {
+    color: #fb5;
+  }
+}
+
 .menu {
   grid-column: 3/5;
   margin-top: 2rem;
